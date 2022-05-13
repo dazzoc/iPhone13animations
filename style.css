@@ -107,7 +107,7 @@ nav, a {
   padding: 5% 30%;
   position: relative;
   z-index: 2;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
@@ -115,7 +115,7 @@ nav, a {
 
 .third-page {
   position: relative;
-  padding: 0% 20%;
+  padding: 0% 15%;
 }
 
 .product-text-container {
@@ -154,7 +154,7 @@ nav, a {
 
 .small-phone {
   position: relative;
-  transform: translateX(-44%) scale(0.8);
+  transform: translateX(-40%) scale(0.8);
   z-index: 2;
 }
 
@@ -182,6 +182,7 @@ nav, a {
   align-items: center;
   justify-content: center;
   flex: 1;
+  background: #fff;
 }
 
 .phone-gallery {
@@ -285,7 +286,7 @@ nav, a {
 }
 
 .photo-subtitle {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .phone-video {
@@ -313,4 +314,18 @@ nav, a {
   bottom: 1rem;
   border-radius: 2rem;
   transform: scale(0.81);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1240px) {
+  nav, .first-page, .third-page {
+    padding: 0% 10%;
+  }
+  .product-info-container {
+    padding: 0rem 2rem;
+  }
+  .purchase-right img{
+    transform: translate(-50%, 0%) scale(0.6);
+  }
 }
