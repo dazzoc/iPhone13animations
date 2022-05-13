@@ -10,6 +10,7 @@ const tlIntro = gsap.timeline({
 });
 
 // Second Page Fade In ////////////////////////////////////////////////////////////////////////////
+// Text Opacity on scroll ////////////////////////////////////////////////////////////////////////
 const tlH = gsap.timeline({
     scrollTrigger: {
         trigger: '.second-page',
@@ -37,7 +38,7 @@ const tlHRemove = gsap.timeline({
 tlHRemove.to('.highlight', {color: 'rgba(255,255,255, 0.4)', stagger: 1});
 
 // Page Three /////////////////////////////////////////////////////////////////////////////////////
-
+// Phone Split ////////////////////////////////////////////////////////////////////////////////////
 const tlSplit = gsap.timeline({
     scrollTrigger: {
     trigger: '.third-page',
@@ -102,3 +103,22 @@ swatches.forEach((swatch, index) => {
         currentSwatch = swatchName;
     });
 });
+
+// Page Five animate video ////////////////////////////////////////////////////////////////////////
+const tlVideo = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.fifth-page',
+        start: '0%', 
+        end: '150%',
+        scrub: true,
+        pin: true,
+    },
+});
+
+tlVideo.fromTo('.product-video', {currentTime: 0}, {currentTime: 3, duration: 1});
+tlVideo.fromTo(
+    '.product-info-container h3',
+    {opacity: 0},
+    {opacity: 1, stagger: 0.25, duration: 0.5}, 
+    '<',
+);
