@@ -201,6 +201,10 @@ nav, a {
   justify-content: center;
 }
 
+.blue {
+  z-index: 1;
+}
+
 .swatch-container {
   text-align: center;
 }
