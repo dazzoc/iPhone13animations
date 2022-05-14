@@ -23,7 +23,7 @@ nav {
   height: 8vh;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
-  z-index: 10;
+  z-index: 999;
 }
 
 nav, a {
@@ -254,7 +254,7 @@ nav, a {
   align-items: center;
   min-height: 100vh;
   justify-content: space-between;
-  padding: 0% 10rem;
+  padding: 0% 20rem;
 }
 
 .right-info, .left-info {
